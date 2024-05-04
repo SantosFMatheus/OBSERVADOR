@@ -1,5 +1,5 @@
-// Implementa a interface Observer e define como o Gerente será notificado.
-public class Gerente implements Observer {
+
+public class Manager implements Observador {
     @Override
     public void update(double valorEstoque) {
         if (valorEstoque >= 1000) {

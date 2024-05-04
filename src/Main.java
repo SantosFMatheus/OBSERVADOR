@@ -2,14 +2,12 @@
 public class Main {
     public static void main(String[] args) {
         Estoque estoque = new Estoque();
-        Gerente gerente = new Gerente();
+        Manager manager = new Manager();
 
-        estoque.addObserver(gerente);
+        estoque.addObserver(manager);
 
-        // Exemplo com valor menor que 1 mil reais
         estoque.setValorEstoque(999);
 
-        // Exemplo com valor maior que 1 mil reais
         estoque.setValorEstoque(1001);
     }
 }
